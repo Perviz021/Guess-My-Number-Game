@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gameFont;
+}
+
+body {
+  background-color: #222;
+}
+
+@font-face {
+  font-family: gameFont;
+  src: url(../fonts/Retro\ Gaming.ttf);
+}
+header {
+  position: relative;
+}
+header .again {
+  padding: 20px 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: #222;
+  transition: 0.3s all linear;
+}
+header .again:hover {
+  background-color: #bbb9b9;
+}
+header .between {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+header h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 50px;
+}
+header .question {
+  display: inline-block;
+  padding: 0px 30px;
+  background: #fff;
+  font-size: 5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -44px;
+  color: #222;
+}
+header hr {
+  margin-top: 80px;
+  border: 5px solid #fff;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+main .left {
+  width: 70%;
+}
+main .left .guess {
+  width: 44%;
+  height: 120px;
+  background: #222;
+  border: 5px solid #fff;
+  outline: none;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+}
+main .left .check {
+  padding: 20px 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #222;
+  position: relative;
+  left: 33px;
+  transition: 0.3s all linear;
+}
+main .left .check:hover {
+  background-color: #bbb9b9;
+}
+main .right {
+  width: 50%;
+  padding: 20px;
+}
+main .right h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+main .right h3.message {
+  margin-bottom: 50px;
+}
+main .right h3.label-score {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=style.css.map */

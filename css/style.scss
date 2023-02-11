@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gameFont;
+}
+
+$main-color: #222;
+body {
+  background-color: $main-color;
+}
+
+@font-face {
+  font-family: gameFont;
+  src: url(../fonts/Retro\ Gaming.ttf);
+}
+
+header {
+  position: relative;
+  .again {
+    padding: 20px 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: $main-color;
+    transition: 0.3s all linear;
+
+    &:hover {
+      background-color: #bbb9b9;
+    }
+  }
+  .between {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 50px;
+  }
+  .question {
+    display: inline-block;
+    padding: 0px 30px;
+    background: #fff;
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -44px;
+    color: $main-color;
+  }
+  hr {
+    margin-top: 80px;
+    border: 5px solid #fff;
+  }
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 70%;
+    .guess {
+      width: 44%;
+      height: 120px;
+      background: $main-color;
+      border: 5px solid #fff;
+      outline: none;
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      display: block;
+    }
+    .check {
+      padding: 20px 30px;
+      font-size: 2rem;
+      cursor: pointer;
+      color: $main-color;
+      position: relative;
+      left: 33px;
+      transition: 0.3s all linear;
+
+      &:hover {
+        background-color: #bbb9b9;
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    padding: 20px;
+
+    h3 {
+      color: #fff;
+      font-size: 1.5rem;
+
+      &.message {
+        margin-bottom: 50px;
+      }
+      &.label-score {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
